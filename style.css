@@ -314,6 +314,7 @@ a {
 .empty {
     border-radius: 30px;
     margin-top: 20%;
+    max-width: 90vw;
 }
 
 .profile {
