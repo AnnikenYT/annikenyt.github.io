@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <section>
+    <section id="top">
         <h3 class="hi"><span class="wave">👋</span> hi, im</h3>
         <h1 class="hand">Anniken</h1>
         <p>I am into</p>
@@ -40,11 +40,11 @@
     <div class="spacer layer1"></div>
     </div>
     <section id="about" class="blue">
-        <h1>About me</h1>
+        <h1>👦 About me</h1>
         <p>
             Hi, im Leo, a 16 year old boy from Germany.
             My hobbys are coding, sailing and biking.
-            I use <br /> <a href="https://python.org"><span class="python bg"><i class="fab fa-python"></i>
+            I use <a href="https://python.org"><span class="python bg"><i class="fab fa-python"></i>
                     <b>python</b></span></a> for small projects,
             and <a href="https://php.net"><span class="php bg"><i class="fab fa-php"></i> <b>PHP</b></span></a> for web
             apps. I am currently learning <br />
@@ -68,21 +68,63 @@
             <a href="https://github.com/AnnikenYT/"><span class="bg"><i class="fab fa-github github"></i> AnnikenYT</span></a>
             <a href="https://instagram.com/itisanniken"><span class="bg"><i class="fab fa-instagram instagram"></i> @itisanniken</span></a>
             <a href=""><span class="bg"><i class="fab fa-twitter twitter"></i> @AnnikenYT (Banned 🙄)</span></a>
-            <a href=""><span class="bg"><i class="fas fa-envelope"></i> anniken@mooonshine.net</span></a>
+            <a href="mailto:anniken@mooonshine.net"><span class="bg"><i class="fas fa-envelope"></i> anniken@mooonshine.net</span></a>
         </div>
     </section>
     <div class="spacer layer2 blue"> </div>
-    <section class="orange">
+    <section class="orange" id="work">
         <h1>My Work</h1>
-        <h3>My github card:</h3>
-        <div class="github-widget" data-user="AnnikenYT" data-options='{"sortBy":"stargazers_count", "limit":6}'></div>
+        <h3>⚡ Active Projects:</h3>
+        <div class="cards">
+            <div class="card dark">
+                <img src="https://i.gyazo.com/4b295c17741c8b3eb447b4a94d9e455f.jpg" alt="">
+                <h4>📷 Bananas Studios Watch</h4>
+                <p><a href="https://bananas-studios.de"><span class="bananas bg"> Bananas Studios</span></a> is a Minecraft Machinema studio, which is led by a few friends and me. I created a netflix-like library page for our films. Unfortunally, I can't show you more than this picture currently, since its not yet released.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.gyazo.com/83efc3e10bdb2fd1b17fc60f096bd528.png" alt="">
+                <h4>🤖 Moshbot</h4>
+                <p><a href="https://bananas-studios.de"><span class="php bg"> Moshbot</span></a> is a discord bot, written in discord.py, that is made for the discord of <a href="https://mooonshine.net"><span class="bg"><img height="20px" width="20px" src="MoshIconTransparent.png"><img/> mooonshine.net</span></a>
+                </p>
+                <p>
+                    <a href="https://github.com/mooonshine-net/moshbot"><span class="bg"><i class="fab fa-github github"></i> Open github gist</span></a>
+                </p>
+            </div>
+            <div class="card dark">
+                <img src="https://i.gyazo.com/1ccfae51b507744d09d5a436f3436072.png" alt="">
+                <h4><span class="wave">👋</span> This Website</h4>
+                <p>This website. Its a project that I started to try out Fireship's css-curve tutorial. It is hosted on <br><a href="https://annikenyt.github.io"><span class="php bg"> Github Pages</span></a>
+                </p>
+                <p>
+                    <a href="https://github.com/mooonshine-net/moshbot"><span class="bg light"><i class="fab fa-github github"></i> Open github gist</span></a>
+                </p>
+            </div>
+        </div>
+        <h3>📦 Old / archived Projects:</h3>
+        <div class="cards">
+            <div class="card" style="height: min-content;">
+                <p style="margin-bottom: 10px;">None... Yet.</p>
+            </div>
+        </div>
 
     </section>
     <div class="spacer layer4 orange"></div>
-    <section class="green">
+    <section class="green" id="crypto">
+        <img class="empty" src="https://i.redd.it/dbbya6buovw01.jpg" alt="">
+        <p>This part is not ready yet. Stay tuned!</p>
     </section>
     <div class="spacer layer3 flipy green"></div>
     <section class="red footer">
+        <p style="line-height: 30px;">
+            &copy; AnnikenYT - <span id="year"></span><br>
+            <a href="#top">Back to top</a><br>
+            <a href="#about">About</a><br>
+            <a href="#work">Work</a><br>
+            <a href="#crypto">Crypto</a><br>
+        </p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </section>
     <script src="github-widget/github-widget.min.js"></script>
 </body>
