@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/6e5677c80d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <title>AnnikenYT</title>
+</head>
+
+<body>
+    <section>
+        <h3 class="hi"><span class="wave">👋</span> hi, im</h3>
+        <h1 class="hand">Anniken</h1>
+        <p>I am into</p>
+        <p id='greeting' class="hand"></p>
+            <script>
+                var text = ["👨‍💻 Web Developement", "⚡ Minecraft Server Administration", "🤖 Discord Bot Developement", "📊 NFTs and Crypto"];
+                var counter = 0;
+                var elem = $("#greeting");
+                setInterval(change, 3000);
+                function change() {
+                    elem.fadeOut(function () {
+                        elem.html(text[counter]);
+                        counter++;
+                        if (counter >= text.length) { counter = 0; }
+                        elem.fadeIn();
+                    });
+                }
+                change();
+            </script>
+        <a href="#about" class="arrow bounce"><i class="fas fa-chevron-down"></i></a>
+    </section>
+    <div class="spacer layer1"></div>
+    </div>
+    <section id="about" class="blue">
+        <h1>About me</h1>
+        <p>
+            Hi, im Leo, a 16 year old boy from Germany.
+            My hobbys are coding, sailing and biking.
+            I use <br /> <a href="https://python.org"><span class="python bg"><i class="fab fa-python"></i>
+                    <b>python</b></span></a> for small projects,
+            and <a href="https://php.net"><span class="php bg"><i class="fab fa-php"></i> <b>PHP</b></span></a> for web
+            apps. I am currently learning <br />
+            <a href="https://nodejs.org/"><span class="node bg"><i class="fab fa-node-js"></i> <b>Node-JS</b></span></a>
+            to replace PHP as a server side scripting language. <br/>
+            I am also running a small minecraft server called <a href="https://mooonshine.net"><span class="bg"><img height="20px" width="20px" src="MoshIconTransparent.png"><img/> mooonshine.net</span></a>.<br/>
+
+        </p>
+        <p>
+            My favorite librarys / tools are: <br />
+            <a href="https://code.visualstudio.com/"><span class="bg"><img height="20px" width="20px" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"></img> Visual Studio Code</span></a><br/>
+            <a href="https://discordpy.readthedocs.io"><span class="bg"><img height="20px" width="20px" src="Discord-Logo-Color.svg"></img> Discord.py ( <span class="python-nobg"><i class="fab fa-python"></i></span> )</span></a><br/>
+            <a href="https://emmet.io"><span class="bg"><img height="20px" width="20px" src="emmet.svg"></img> Emmet ( <span class="html"><i class="fab fa-html5"></i></span>, <span class="css"><i class="fab fa-css3-alt"></i></span> )</span></a><br/>
+            <a href="https://fontawesome.com/"><span class="bg"><img height="20px" width="20px" src="fontawesome.svg"></img> FontAwesome</span></a><br/>
+            <a href="https://threejs.org"><span class="bg"><img height="20px" width="20px" src="threejs.svg"><img/> Threejs.org ( <span class="js"><i class="fab fa-js-square"></i></span> )</span></a><br/>
+        </p>
+
+        <h2>Contact</h2>
+        <div class="social">
+            <a href=""><span class="bg"><i class="fab fa-discord discord"></i> Anniken#0001</span></a>
+            <a href="https://github.com/AnnikenYT/"><span class="bg"><i class="fab fa-github github"></i> AnnikenYT</span></a>
+            <a href="https://instagram.com/itisanniken"><span class="bg"><i class="fab fa-instagram instagram"></i> @itisanniken</span></a>
+            <a href=""><span class="bg"><i class="fab fa-twitter twitter"></i> @AnnikenYT (Banned 🙄)</span></a>
+            <a href=""><span class="bg"><i class="fas fa-envelope"></i> anniken@mooonshine.net</span></a>
+        </div>
+    </section>
+    <div class="spacer layer2 blue"> </div>
+    <section class="orange">
+        <h1>My Work</h1>
+        <p></p>
+    </section>
+    <div class="spacer layer4 orange"></div>
+    <section class="green">
+        <h1>Nice Curves</h1>
+        <p>Nihil facere error, quidem, rerum possimus consectetur magnam totam sint placeat illum eligendi delectus,
+            laboriosam porro quos nobis fugit ab?</p>
+    </section>
+    <div class="spacer layer3 flipy green"></div>
+    <section class="red footer">
+        <h1>Nice Curves</h1>
+        <p>Inventore fugiat labore perspiciatis beatae aliquam accusantium necessitatibus corporis quisquam obcaecati
+            animi! Ea delectus placeat alias mollitia error, non qui!</p>
+    </section>
+</body>
+
+</html>

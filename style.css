@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Glory:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+@import url('./font-awesome-color-brand.css');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Glory', sans-serif;
+    color: white;
+    background: #111;
+    text-align: center;
+    font-size: 20px
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+    line-height: 50px;
+}
+
+img {
+    border: none;
+    vertical-align: -7%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    min-height: 100px;
+}
+
+.hand {
+    font-family: 'Allison', cursive;
+    font-size: 50px;
+    margin-top: 0
+}
+
+.blue {
+    background-color: #2980b9;
+}
+
+.red {
+    background-color: #c0392b;
+}
+
+.orange {
+    background-color: #e06f24;
+}
+
+.green {
+    background-color: #27ae60;
+}
+
+.bg {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #111;
+    white-space: nowrap;
+}
+
+.node {
+    background-color: #333333;
+    color: #66cc33;
+}
+
+.php {
+    background-color: #232531;
+    color: #8993be;
+}
+
+.python {
+    background-color: #4b8bbe;
+    color: #ffd43b;
+}
+
+.python-nobg {
+    color: #ffd43b;
+}
+
+.js {
+    color: #f0db4f;
+}
+
+.html {
+    color: #e34f26;
+}
+
+.css {
+    color: #2965f1;
+}
+
+.hi {
+    margin-bottom: 0;
+}
+
+.spacer {
+    aspect-ratio: 930/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url("./waves-1.svg");
+}
+
+.layer2 {
+    background-image: url("./waves-2.svg");
+}
+
+.layer3 {
+    background-image: url("./waves-3.svg");
+}
+
+.layer4 {
+    background-image: url("./waves-4.svg");
+}
+
+.wave {
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+.flipy {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#greeting {
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate( 0.0deg)
+    }
+    10% {
+        transform: rotate(14.0deg)
+    }
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+    30% {
+        transform: rotate(14.0deg)
+    }
+    40% {
+        transform: rotate(-4.0deg)
+    }
+    50% {
+        transform: rotate(10.0deg)
+    }
+    60% {
+        transform: rotate( 0.0deg)
+    }
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate( 0.0deg)
+    }
+}
+
+.arrow {
+    margin-top: 30px;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 3s infinite;
+}
+
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social__icon {
+    padding: 10px;
+    border: 5px white;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.social>a {
+    margin: 5px;
+}
