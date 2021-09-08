@@ -315,3 +315,8 @@ a {
     border-radius: 30px;
     margin-top: 20%;
 }
+
+.profile {
+    height: 200px;
+    border-radius: 50%;
+}
