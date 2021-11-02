@@ -60,6 +60,10 @@ a {
     background-color: #27ae60;
 }
 
+.text-green {
+    color: #27ae60;
+}
+
 .bg {
     padding: 5px;
     border-radius: 5px;

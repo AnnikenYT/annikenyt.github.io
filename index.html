@@ -1,80 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/6e5677c80d.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/tailwind.css"> -->
     <link rel="shortcut icon" href="Pixelart.png" type="image/png">
     <link href="github-widget/github-widget.css" rel="stylesheet" type="text/css" />
     <title>AnnikenYT | 💻 Personal Website</title>
     <meta property="og:title" content="💻 Personal Website">
-<meta property="og:site_name" content="AnnikenYT">
-<meta property="og:url" content="https://annikenyt.github.io">
-<meta property="og:description" content="Hi, I'm Leo, a 16-year-old boy from Germany. My hobbies are coding, sailing and biking. This is my website, feel free to take a look around!">
-<meta property="og:type" content="profile">
-<meta property="og:image" content="https://annikenyt.github.io/Pixelart.png">
+    <meta property="og:site_name" content="AnnikenYT">
+    <meta property="og:url" content="https://annikenyt.github.io">
+    <meta property="og:description"
+        content="Hi, I'm Leo, a 16-year-old boy from Germany. My hobbies are coding, sailing and biking. This is my website, feel free to take a look around!">
+    <meta property="og:type" content="profile">
+    <meta property="og:image" content="https://annikenyt.github.io/assets/img/Pixelart.png">
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="https://kit.fontawesome.com/6e5677c80d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+
 </head>
 
-<body>
+<body class="m-0">
     <section id="top">
         <h3 class="hi"><span class="wave">👋</span> hi, im</h3>
         <h1 class="hand">Anniken</h1>
-        <img class="profile" src="Pixelart.png" alt="">
+        <img class="profile" src="assets/img/Pixelart.png" alt="">
         <p>I am into</p>
-        <p id='greeting' class="hand"></p>
-            <script>
-                var text = ["👨‍💻 Web Developement", "⚡ Minecraft Server Administration", "🤖 Discord Bot Developement", "📊 NFTs and Crypto"];
-                var counter = 0;
-                var elem = $("#greeting");
-                setInterval(change, 3000);
-                function change() {
-                    elem.fadeOut(function () {
-                        elem.html(text[counter]);
-                        counter++;
-                        if (counter >= text.length) { counter = 0; }
-                        elem.fadeIn();
-                    });
-                }
-                change();
-            </script>
+        <a id='greeting' class="hand"></a>
+        <script>
+            var text = ["👨‍💻 Web Developement", "⚡ Minecraft Server Administration", "🤖 Discord Bot Developement", "📊 NFTs and Crypto"];
+            var counter = 0;
+            var elem = $("#greeting");
+            setInterval(change, 3000);
+            function change() {
+                elem.fadeOut(function () {
+                    elem.html(text[counter]);
+                    counter++;
+                    if (counter >= text.length) { counter = 0; }
+                    elem.fadeIn();
+                });
+            }
+            change();
+        </script>
         <a href="#about" class="arrow bounce"><i class="fas fa-chevron-down"></i></a>
     </section>
     <div class="spacer layer1"></div>
     </div>
     <section id="about" class="blue">
         <h1>👦 About me</h1>
-        <p>
-            Hi, I'm Leo, a 16-year-old boy from Germany. My hobbies are coding, sailing and biking.
-            I use <a target="_blank" rel="noopener noreferrer"  href="https://python.org"><span class="python bg"><i class="fab fa-python"></i>
+        <p style="max-width: 650px;">
+            Hi, I'm Leo, a <span id="age">16</span> year old boy from Germany. <br /> My hobbies are
+            coding, sailing and
+            biking.
+            I use <a target="_blank" rel="noopener noreferrer" href="https://python.org"><span class="python bg"><i
+                        class="fab fa-python"></i>
                     <b>python</b></span></a> for small projects,
-            and <a target="_blank" rel="noopener noreferrer"  href="https://php.net"><span class="php bg"><i class="fab fa-php"></i> <b>PHP</b></span></a> for web
-            apps. I am currently learning <br />
-            <a target="_blank" rel="noopener noreferrer"  href="https://nodejs.org/"><span class="node bg"><i class="fab fa-node-js"></i> <b>Node-JS</b></span></a>
-            to replace PHP as a server side scripting language. <br/>
-            I am also running a small minecraft server called <a target="_blank" rel="noopener noreferrer"  href="https://mooonshine.net"><span class="bg"><img height="20px" width="20px" src="MoshIconTransparent.png"><img/> mooonshine.net</span></a>.<br/>
+            and <a target="_blank" rel="noopener noreferrer" href="https://vuejs.org"><span class="text-green bg"><i
+                        class="fab fa-vuejs"></i> <b>VueJS (v3)</b></span></a> for web
+            apps. I am currently learning
+            <a target="_blank" rel="noopener noreferrer" href="https://nodejs.org/"><span class="node bg"><i
+                        class="fab fa-node-js"></i> <b>Node-JS</b></span></a>
+            along with ExpressJS and GraphQL for backend and API developement.
+            I am also running a small minecraft server called <a target="_blank" rel="noopener noreferrer"
+                href="https://mooonshine.net"><span class="bg"><img height="20px" width="20px"
+                        src="assets/img/MoshIconTransparent.png"><img /> mooonshine.net</span></a>.
 
         </p>
         <p>
             My favorite librarys / tools are: <br />
-            <a target="_blank" rel="noopener noreferrer"  href="https://code.visualstudio.com/"><span class="bg"><img height="20px" width="20px" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"></img> Visual Studio Code</span></a><br/>
-            <a target="_blank" rel="noopener noreferrer"  href="https://discordpy.readthedocs.io"><span class="bg"><img height="20px" width="20px" src="Discord-Logo-Color.svg"></img> Discord.py ( <span class="python-nobg"><i class="fab fa-python"></i></span> )</span></a><br/>
-            <a target="_blank" rel="noopener noreferrer"  href="https://emmet.io"><span class="bg"><img height="20px" width="20px" src="emmet.svg"></img> Emmet ( <span class="html"><i class="fab fa-html5"></i></span>, <span class="css"><i class="fab fa-css3-alt"></i></span> )</span></a><br/>
-            <a target="_blank" rel="noopener noreferrer"  href="https://fontawesome.com/"><span class="bg"><img height="20px" width="20px" src="fontawesome.svg"></img> FontAwesome</span></a><br/>
-            <a target="_blank" rel="noopener noreferrer"  href="https://threejs.org"><span class="bg"><img height="20px" width="20px" src="threejs.svg"><img/> Threejs.org ( <span class="js"><i class="fab fa-js-square"></i></span> )</span></a><br/>
+            <!-- VS Code -->
+            <a target="_blank" rel="noopener noreferrer" href="https://code.visualstudio.com/"><span class="bg"><img
+                        height="20px" width="20px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"></img>
+                    Visual Studio Code</span></a><br />
+            <!-- Discord.py -->
+            <a target="_blank" rel="noopener noreferrer" href="https://discordpy.readthedocs.io"><span class="bg"><img
+                        height="20px" width="20px" src="assets/img/Discord-Logo-Color.svg"></img> Discord.py ( <span
+                        class="python-nobg"><i class="fab fa-python"></i></span> )</span></a><br />
+            <!-- Emmet -->
+            <a target="_blank" rel="noopener noreferrer" href="https://emmet.io"><span class="bg"><img height="20px"
+                        width="20px" src="assets/img/emmet.svg"></img> Emmet ( <span class="html"><i
+                            class="fab fa-html5"></i></span>, <span class="css"><i class="fab fa-css3-alt"></i></span>
+                    )</span></a><br />
+            <!-- FontAwesome -->
+            <a target="_blank" rel="noopener noreferrer" href="https://fontawesome.com/"><span class="bg"><img
+                        height="20px" width="20px" src="assets/img/fontawesome.svg"></img> FontAwesome</span></a><br />
+            <!-- TailwindCSS -->
+            <a target="_blank" rel="noopener noreferrer" href="https://tailwindcss.com/"><span class="bg"><img
+                        src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" height="20px"
+                        width="20px" alt="TailwindCSS Icon">
+                    TailwindCSS (
+                    <span class="css"><i class="fab fa-css3-alt"></i></span> )</span></a><br />
+            <!-- TS -->
+            <a target="_blank" rel="noopener noreferrer" href="https://tailwindcss.com/"><span class="bg"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" height="20px"
+                        width="20px" alt="Typescript Logo | ™/®Microsoft, Public domain, via Wikimedia Commons">
+                    TypeScript (
+                    <span class="js"><i class="fab fa-js-square"></i></span> )</span></a><br />
+            <!-- VueJS -->
+            <a target="_blank" rel="noopener noreferrer" href="https://tailwindcss.com/"><span class="bg"><i
+                        class="fab fa-vuejs text-green"></i>
+                    VueJS (
+                    <span class="html"><i class="fab fa-html5"></i></span> )</span></a><br />
         </p>
 
         <h2>Contact</h2>
         <div class="social">
-            <a target="_blank" rel="noopener noreferrer"  href=""><span class="bg"><i class="fab fa-discord discord"></i> Anniken#0001</span></a>
-            <a target="_blank" rel="noopener noreferrer"  href="https://github.com/AnnikenYT/"><span class="bg"><i class="fab fa-github github"></i> AnnikenYT</span></a>
-            <a target="_blank" rel="noopener noreferrer"  href="https://instagram.com/itisanniken"><span class="bg"><i class="fab fa-instagram instagram"></i> @itisanniken</span></a>
-            <a href=""><span class="bg"><i class="fab fa-twitter twitter"></i> @AnnikenYT (Banned 🙄)</span></a>
-            <a target="_blank" rel="noopener noreferrer"  href="mailto:anniken@mooonshine.net"><span class="bg"><i class="fas fa-envelope"></i> anniken@mooonshine.net</span></a>
+            <a target="_blank" rel="noopener noreferrer" href=""><span class="bg"><i class="fab fa-discord discord"></i>
+                    Anniken#0001</span></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/AnnikenYT/"><span class="bg"><i
+                        class="fab fa-github github"></i> AnnikenYT</span></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/itisanniken"><span class="bg"><i
+                        class="fab fa-instagram instagram"></i> @itisanniken</span></a>
+            <a target="_blank" rel="noopener noreferrer" href="mailto:anniken@mooonshine.net"><span class="bg"><i
+                        class="fas fa-envelope"></i> anniken@mooonshine.net</span></a>
         </div>
     </section>
     <div class="spacer layer2 blue"> </div>
@@ -85,24 +129,36 @@
             <div class="card dark">
                 <img src="https://i.gyazo.com/4b295c17741c8b3eb447b4a94d9e455f.jpg" alt="">
                 <h4>📷 Bananas Studios Watch</h4>
-                <p><a target="_blank" rel="noopener noreferrer"  href="https://bananas-studios.de"><span class="bananas bg"> Bananas Studios</span></a> is a Minecraft Machinema studio, which is led by a few friends and me. I created a netflix-like library page for our films. Unfortunally, I can't show you more than this picture currently, since its not yet released.</p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://bananas-studios.de"><span
+                            class="bananas bg"> Bananas Studios</span></a> is a Minecraft Machinema studio, which is led
+                    by a few friends and me. I created a netflix-like library page for our films. Unfortunally, I can't
+                    show you more than this picture currently, since its not yet released.</p>
             </div>
             <div class="card">
                 <img src="https://i.gyazo.com/83efc3e10bdb2fd1b17fc60f096bd528.png" alt="">
                 <h4>🤖 Moshbot</h4>
-                <p><a target="_blank" rel="noopener noreferrer"  href="https://discord.link/mooonshine"><span class="php bg"> Moshbot</span></a> is a discord bot, written in discord.py, that is made for the discord of <a target="_blank" rel="noopener noreferrer"  href="https://mooonshine.net"><span class="bg"><img height="20px" width="20px" src="MoshIconTransparent.png"><img/> mooonshine.net</span></a>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://discord.link/mooonshine"><span
+                            class="php bg"> Moshbot</span></a> is a discord bot, written in discord.py, that is made for
+                    the discord of <a target="_blank" rel="noopener noreferrer" href="https://mooonshine.net"><span
+                            class="bg"><img height="20px" width="20px" src="assets/img/MoshIconTransparent.png"><img />
+                            mooonshine.net</span></a>
                 </p>
                 <p>
-                    <a target="_blank" rel="noopener noreferrer"  href="https://github.com/mooonshine-net/moshbot"><span class="bg"><i class="fab fa-github github"></i> Open github gist</span></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/mooonshine-net/moshbot"><span
+                            class="bg"><i class="fab fa-github github"></i> Open github gist</span></a>
                 </p>
             </div>
             <div class="card dark">
                 <img src="https://i.gyazo.com/1ccfae51b507744d09d5a436f3436072.png" alt="">
                 <h4><span class="wave">👋</span> This Website</h4>
-                <p>This website. Its a project that I started to try out Fireship's css-curve tutorial. It is hosted on <br><a target="_blank" rel="noopener noreferrer"  href="https://annikenyt.github.io"><span class="php bg"> Github Pages</span></a>
+                <p>This website. Its a project that I started to try out Fireship's css-curve tutorial. It is hosted on
+                    <br><a target="_blank" rel="noopener noreferrer" href="https://annikenyt.github.io"><span
+                            class="php bg"> Github Pages</span></a>
                 </p>
                 <p>
-                    <a target="_blank" rel="noopener noreferrer"  href="https://github.com/AnnikenYT/annikenyt.github.io"><span class="bg light"><i class="fab fa-github github"></i> Open github gist</span></a>
+                    <a target="_blank" rel="noopener noreferrer"
+                        href="https://github.com/AnnikenYT/annikenyt.github.io"><span class="bg light"><i
+                                class="fab fa-github github"></i> Open github gist</span></a>
                 </p>
             </div>
         </div>
@@ -132,7 +188,7 @@
             document.getElementById("year").innerHTML = new Date().getFullYear();
         </script>
     </section>
-    <script src="github-widget/github-widget.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
