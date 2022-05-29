@@ -15,6 +15,7 @@
     "tailwindcss": "^3.0.24"
   },
   "dependencies": {
-    "dayjs": "^1.11.2"
+    "dayjs": "^1.11.2",
+    "party-js": "^2.1.2"
   }
 }

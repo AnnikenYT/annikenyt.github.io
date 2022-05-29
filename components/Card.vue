@@ -1,5 +1,5 @@
 <template>
-        <div class="m-3 p-5 min-h-[31rem] w-96 rounded-md shadow-lg text-justify bg-neutral-900">
+        <div class="m-3 p-5 sm:w-96 min-h-[31rem] w-full rounded-md shadow-lg text-justify bg-neutral-900">
             <img :src="image.url" :alt="image.alt" class="max-w-96 rounded-md" />
             <h3 class="text-lg font-bold">{{ name }}</h3>
             <p>

@@ -118,13 +118,70 @@ export default defineEventHandler((event) => {
             ],
             latest_project: 0
         },
+        design: {
+          images: [
+            {
+              url: "/img/design-1.png",
+              alt: "Wallpaper, Fiverr commission",
+            },
+            {
+              url: "/img/design-2.png",
+              alt: "Character design, Fiverr commission",
+            },
+            {
+              url: "/img/design-3.png",
+              alt: "Character design, Fiverr commission",
+            }
+          ]
+        },
         contact: [
           {
             name: "Email",
+            content: "anniken@mooonshine.net",
             url: "mailto:anniken@mooonshine.net",
             color: "#3572A5",
             bg_color: "#f5f6fa",
             image: "https://cdn.worldvectorlogo.com/logos/gmail-icon.svg",
+          },
+          {
+            name: "Github",
+            content: "AnnikenYT",
+            url: "https://github.com/AnnikenYT",
+            color: "#3572A5",
+            bg_color: "#f5f6fa",
+            image: "https://cdn.worldvectorlogo.com/logos/github-icon.svg",
+          },
+          {
+            name: "Discord",
+            content: "Anniken#0001",
+            url: "",
+            color: "#3572A5",
+            bg_color: "#f5f6fa",
+            image: "https://cdn.worldvectorlogo.com/logos/discord.svg",
+          },
+          {
+            name: "Twitter",
+            content: "AnnikenToGo",
+            url: "https://twitter.com/AnnikenToGo",
+            color: "#3572A5",
+            bg_color: "#f5f6fa",
+            image: "https://cdn.worldvectorlogo.com/logos/twitter-3.svg",
+          },
+          {
+            name: "Instagram",
+            content: "itisanniken",
+            url: "https://www.instagram.com/itisanniken/",
+            color: "#3572A5",
+            bg_color: "#f5f6fa",
+            image: "https://cdn.worldvectorlogo.com/logos/instagram-icon-1.svg",
+          },
+          {
+            name: "Fiverr",
+            content: "annikentogo",
+            url: "https://www.fiverr.com/annikentogo",
+            color: "#3572A5",
+            bg_color: "#f5f6fa",
+            image: "https://cdn.worldvectorlogo.com/logos/fiverr-1.svg",
           }
         ]
     };
