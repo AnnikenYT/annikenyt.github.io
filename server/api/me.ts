@@ -25,7 +25,7 @@ export default defineEventHandler((event) => {
             finished: false,
             degree: "High School Graduation",
             field: "General Studies",
-            school: "a School",
+            school: "Sussex Regional High, NB",
         },
         coding: {
             fields: [
