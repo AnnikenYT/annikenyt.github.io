@@ -14,7 +14,8 @@ export default defineEventHandler((event) => {
             },
         ],
         hobbies: ["🧑‍💻 Coding", "⛵ Sailing", "🚴‍♂️ Biking"],
-        country: "Canada",
+        country: "Germany",
+        country_code: "de",
         employment: {
             status: false,
             searching: false,
