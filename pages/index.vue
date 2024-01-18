@@ -40,7 +40,7 @@
                     Hi! Im Leo. I am
                     <span class="font-mono w-10">{{ age }}</span> Years old, and
                     live in
-                    <img :src="`https://countryflagsapi.com/svg/${me.country}`" class="inline-block w-5 mx-1 rounded-sm"
+                    <img :src="`https://flagcdn.com/de.svg`" class="inline-block w-5 mx-1 rounded-sm"
                         :alt="`Flag of ${me.country}`" />
                     <b>{{ me.country }}</b>. I am currently
                     <b>{{
